@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ex00_dome.MainActivity" >
+
+<com.nirhart.parallaxscroll.views.ParallaxScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:parallax_factor="1.9"
+    tools:context=".LoginActivity" >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="vertical" >
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_empty" />
+
+        <TextView
+             android:id="@+id/tv_detail_imgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="6dp"
+            android:text="aaa"
+			android:layout_marginTop="150dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+       </FrameLayout>
+     
+         <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layerType="software"/>
+    </LinearLayout> 
+    
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>
+    
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:appv7="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/ab_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        appv7:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        appv7:titleTextColor="#00FF00"
+        appv7:title="" >
+
+        <!-- android:background="?attr/colorPrimaryDark" -->
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            layout="@layout/toolbar_custom_detail" />
+    </android.support.v7.widget.Toolbar>
+
+   
+</FrameLayout>

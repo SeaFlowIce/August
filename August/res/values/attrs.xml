@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <attr name="isNight" format="reference"></attr>
+		<attr name="textColor" format="reference"></attr>
+		<attr name="bg_night_menu_banner" format="reference"></attr>
+		<attr name="ab_background" format="reference"></attr>
+		<attr name="bg_list_item" format="reference"></attr>
+		<attr name="dabg_set" format="reference"></attr>
+		<attr name="xiaobg_set" format="reference"></attr>
+		<attr name="xiaobg_set_list" format="reference"></attr>
+		<attr name="cardview_background" format="reference"></attr>
+        
+        
+</resources>

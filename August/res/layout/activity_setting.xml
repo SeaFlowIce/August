@@ -1,0 +1,430 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.galgame.august.SettingActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="常规"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="自动离线下载"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/TextView06"
+                    android:layout_below="@+id/TextView06"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="仅 Wi-Fi 下可用，自动下载最新内容"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView05"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_nopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="无图模式"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_nopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/TextView04"
+                    android:layout_below="@+id/TextView04"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="2G/3G 网络下不下载图片"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView03"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_bigtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="大字号"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/check_bigtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView02"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="其他"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="推送消息"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/CheckBox05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView07"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="点评分享到微博"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/CheckBox04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView01"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="清除缓存"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <!-- <CheckBox -->
+                <!-- android:id="@+id/CheckBox07" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginBottom="6dp" /> -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView09"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_updata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="检查更新"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/CheckBox06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/TextView08"
+                    android:layout_below="@+id/TextView08"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="版本：2.6.0(744)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView10"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="反馈"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:text="意见反馈"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/TextView11"
+                    android:layout_marginTop="6dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

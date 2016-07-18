@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+rectangle 矩形
+oval 椭圆
+line 一条线
+ring  环形
+-->
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--4个角的圆角-->
+    <corners android:radius="5dp"/>
+
+    <!--内边距-->
+    <padding android:bottom="6dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="6dp"/>
+
+    <!--填充颜色
+    按需求要不要加
+    -->
+    <solid android:color="#FFFAE3"/>
+
+    <!--边框颜色
+    需要 就加边框,
+    -->
+
+    <stroke android:color="#87CEFA"
+        android:width="1dp"/>
+
+    </shape>

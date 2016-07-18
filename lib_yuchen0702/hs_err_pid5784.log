@@ -1,0 +1,132 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=5784, tid=2076
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.25-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01bac400):  JavaThread "Unknown thread" [_thread_in_vm, id=2076, stack(0x02350000,0x023a0000)]
+
+Stack: [0x02350000,0x023a0000],  sp=0x0239f9e4,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19796b]
+V  [jvm.dll+0x1908e6]
+V  [jvm.dll+0x3b4e9]
+V  [jvm.dll+0x3b69e]
+V  [jvm.dll+0x4a063]
+V  [jvm.dll+0x9dc8e]
+V  [jvm.dll+0x9df52]
+V  [jvm.dll+0x145a01]
+V  [jvm.dll+0x169ab8]
+V  [jvm.dll+0xdaea1]
+C  [javaw.exe+0x13e4]
+C  [javaw.exe+0x1eb7]
+C  [javaw.exe+0xaba1]
+C  [javaw.exe+0xac2b]
+C  [kernel32.dll+0x1337a]
+C  [ntdll.dll+0x39f72]
+C  [ntdll.dll+0x39f45]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01bac400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2076, stack(0x02350000,0x023a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.364 loading class java/lang/CharSequence done
+Event: 0.365 loading class java/lang/String done
+Event: 0.365 loading class java/lang/Class
+Event: 0.365 loading class java/lang/reflect/AnnotatedElement
+Event: 0.365 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.365 loading class java/lang/reflect/GenericDeclaration
+Event: 0.365 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.365 loading class java/lang/reflect/Type
+Event: 0.365 loading class java/lang/reflect/Type done
+Event: 0.365 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x00130000 - 0x00160000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\javaw.exe
+0x77d50000 - 0x77ed0000 	C:\Windows\SysWOW64\ntdll.dll
+0x75440000 - 0x75550000 	C:\Windows\syswow64\kernel32.dll
+0x75550000 - 0x75597000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75ef0000 - 0x75f90000 	C:\Windows\syswow64\ADVAPI32.dll
+0x77100000 - 0x771ac000 	C:\Windows\syswow64\msvcrt.dll
+0x77310000 - 0x77329000 	C:\Windows\SysWOW64\sechost.dll
+0x75dc0000 - 0x75eb0000 	C:\Windows\syswow64\RPCRT4.dll
+0x753e0000 - 0x75440000 	C:\Windows\syswow64\SspiCli.dll
+0x753d0000 - 0x753dc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76de0000 - 0x76ee0000 	C:\Windows\syswow64\USER32.dll
+0x76f30000 - 0x76fc0000 	C:\Windows\syswow64\GDI32.dll
+0x770f0000 - 0x770fa000 	C:\Windows\syswow64\LPK.dll
+0x77040000 - 0x770dd000 	C:\Windows\syswow64\USP10.dll
+0x73860000 - 0x739fe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x777b0000 - 0x77807000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76d80000 - 0x76de0000 	C:\Windows\system32\IMM32.DLL
+0x75a50000 - 0x75b1c000 	C:\Windows\syswow64\MSCTF.dll
+0x70e90000 - 0x70f4f000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\msvcr100.dll
+0x664e0000 - 0x66884000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\client\jvm.dll
+0x6eaa0000 - 0x6eaa7000 	C:\Windows\system32\WSOCK32.dll
+0x76ef0000 - 0x76f25000 	C:\Windows\syswow64\WS2_32.dll
+0x756e0000 - 0x756e6000 	C:\Windows\syswow64\NSI.dll
+0x75eb0000 - 0x75ee2000 	C:\Windows\syswow64\WINMM.dll
+0x75830000 - 0x75835000 	C:\Windows\syswow64\PSAPI.DLL
+0x73f70000 - 0x73f7c000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\verify.dll
+0x70e60000 - 0x70e81000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\java.dll
+0x70f70000 - 0x70f83000 	C:\Program Files (x86)\Java\jre1.8.0_25\bin\zip.dll
+0x728c0000 - 0x729ab000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\Android_Prog\android-sdk_r24.2\platforms\android-22\android.jar 
+java_command: com.xinbo.utils.RegexValidateUtil
+java_class_path (initial): E:\workspace\adt24.2\lib_yuchen0701\libs\lib_uil.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\open_sdk.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\jpush-sdk-release1.7.3.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\ActiveAndroid-3.1.jar;E:\workspace\adt24.2\appcompat_v7\libs\android-support-v4.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\Bmob_Push_V0.6beta_20150408.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\lib_volley_new.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\gson-2.2.4.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\BmobSDK_V3.4.0_0616.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\pinyin4j-2.5.0.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\filechoose.jar;E:\workspace\adt24.2\appcompat_v7\libs\android-support-v7-appcompat.jar;E:\workspace\adt24.2\lib_yuchen0701\libs\mta-sdk-1.0.0.jar;E:\workspace\adt24.2\appcompat_v7\bin\appcompat_v7.jar;E:\workspace\adt24.2\lib_SwitchButton\bin\lib_switchbutton.jar;E:\workspace\adt24.2\lib_yuchen0701\bin\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files (x86)/Java/jdk1.8.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.8.0_25/bin/../jre/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.8.0_25\bin;D:\Android_Prog\android-sdk_r24.2\platform-tools;;D:\Android_Prog\eclipse-24.2;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, erms, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 3888244k(1067972k free), swap 7774624k(4537792k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.25-b02) for windows-x86 JRE (1.8.0_25-b18), built on Oct  7 2014 14:31:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Jul 03 13:41:48 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

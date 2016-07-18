@@ -1,0 +1,39 @@
+<resources>
+	<style name="light" parent="Theme.AppCompat.Light.NoActionBar">
+	     <item name="cardview_background">@color/cardview_light_background</item>
+	    <item name="ab_background">@color/ab_background_light</item>
+    <item name="bg_night_menu_banner">@color/bg_light_menu_banner</item>
+    <item name="bg_list_item">@color/bg_light_list</item>
+    <item name="textColor">@color/texthei</item>
+    <item name="xiaobg_set">@color/xiaobg_set_light</item>
+    <item name="xiaobg_set_list">@color/xiaobg_set_list_light</item>
+
+	</style>
+	<style name="night" parent="Theme.AppCompat.NoActionBar">
+	     <item name="cardview_background">@color/cardview_dark_background</item>
+	    <item name="ab_background">@color/ab_background_dark</item>
+       <item name="bg_list_item">@color/bg_night_list</item>
+   <item name="bg_night_menu_banner">@color/bg_night_menu_banner</item>
+       <item name="textColor">@color/textbai</item>
+    <item name="xiaobg_set">@color/xiaobg_set_night</item>
+    <item name="xiaobg_set_list">@color/xiaobg_set_list_night</item>
+	    
+	</style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

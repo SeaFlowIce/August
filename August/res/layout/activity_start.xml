@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cyd.zhihu.StartActivity" >
+
+    <ImageView
+        android:id="@+id/img_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="#000000" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/start_LL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#17181A" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="知乎日报"
+                android:textColor="#9C9DA1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_start_helloworld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天三次，每次七分钟"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#707173"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:text="跳过" 
+            android:textColor="#707173"
+            android:background="#17181A"
+            android:onClick="btnEnd"/>
+
+    </LinearLayout>
+
+</FrameLayout>

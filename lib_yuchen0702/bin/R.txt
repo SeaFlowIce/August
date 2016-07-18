@@ -1,0 +1,55 @@
+int attr civ_border_color 0x7f010005
+int attr civ_border_overlay 0x7f010006
+int attr civ_border_width 0x7f010004
+int attr civ_fill_color 0x7f010007
+int attr debugDraw 0x7f010009
+int attr indicatorCount 0x7f010001
+int attr layoutDirection 0x7f010008
+int attr layout_newLine 0x7f01000b
+int attr layout_position 0x7f010003
+int attr layout_weight 0x7f01000c
+int attr letterSize 0x7f010000
+int attr radiusSize 0x7f010002
+int attr weightDefault 0x7f01000a
+int color color 0x7f060000
+int color linkcolor 0x7f060001
+int drawable ic_empty 0x7f020000
+int drawable ic_error 0x7f020001
+int drawable ic_launcher 0x7f020002
+int drawable ic_stub 0x7f020003
+int id imageView1 0x7f070005
+int id left 0x7f070000
+int id ltr 0x7f070003
+int id middle 0x7f070001
+int id progressBar1 0x7f070008
+int id right 0x7f070002
+int id rtl 0x7f070004
+int id textView1 0x7f070009
+int id tv_subtitle 0x7f070007
+int id tv_title 0x7f070006
+int layout custom_notify 0x7f030000
+int layout custom_toast 0x7f030001
+int string app_name 0x7f040000
+int style AppBaseTheme 0x7f050000
+int style AppTheme 0x7f050001
+int[] styleable CircleImageView { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007 }
+int styleable CircleImageView_civ_border_color 1
+int styleable CircleImageView_civ_border_overlay 2
+int styleable CircleImageView_civ_border_width 0
+int styleable CircleImageView_civ_fill_color 3
+int[] styleable FlowLayout { 0x010100af, 0x010100c4, 0x7f010008, 0x7f010009, 0x7f01000a }
+int styleable FlowLayout_android_gravity 0
+int styleable FlowLayout_android_orientation 1
+int styleable FlowLayout_debugDraw 3
+int styleable FlowLayout_layoutDirection 2
+int styleable FlowLayout_weightDefault 4
+int[] styleable FlowLayout_LayoutParams { 0x010100b3, 0x7f01000b, 0x7f01000c }
+int styleable FlowLayout_LayoutParams_android_layout_gravity 0
+int styleable FlowLayout_LayoutParams_layout_newLine 1
+int styleable FlowLayout_LayoutParams_layout_weight 2
+int[] styleable LetterSideBar { 0x7f010000 }
+int styleable LetterSideBar_letterSize 0
+int[] styleable ViewPagerIndicator { 0x7f010001, 0x7f010002, 0x7f010003 }
+int styleable ViewPagerIndicator_indicatorCount 0
+int styleable ViewPagerIndicator_layout_position 2
+int styleable ViewPagerIndicator_radiusSize 1

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardBackgroundColor="?attr/cardview_background"
+    card_view:cardElevation="10dp" 
+    card_view:cardUseCompatPadding="true">
+
+    <!-- 需要删除clickable="true"，否则行布局注册点击事件无效 -->
+    <!-- android:clickable="true" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_menu"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/img_icon"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="96dp"
+            android:layout_height="72dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

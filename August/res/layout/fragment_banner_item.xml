@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xinbo.fragment.BannerItemFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:text="Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text Large Text "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</FrameLayout>

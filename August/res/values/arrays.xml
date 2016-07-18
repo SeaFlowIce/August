@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_fragment_title">
+        <item>热门</item>
+        <item>最新</item>
+        <item>title1</item>
+        <item>title2</item>
+        <item>title3</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+{
+		"version": 6,
+		"feature": "1. 增加xxx功能 \r\n2. 增加xxx功能 \r\n3. 修复xxbug \r\n4. 提升了性能和稳定性",
+		"apkurl":  "http://192.168.56.1/upgrade.apk",
+		"filelen": 446225
+}
